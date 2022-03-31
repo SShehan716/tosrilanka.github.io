@@ -1,0 +1,405 @@
+ body {
+   height: 110vh;
+   text-align: center;
+   margin: 0% 0;
+   background-color: #212121;
+   background: linear-gradient(-45deg, #032d4b, #04497a, #0772bd, #0995f5);
+   animation: change 10s ease-in-out infinite;
+   background-size: 400% 400%;
+ }
+
+
+/* for animated line*/
+
+ @keyframes change {
+   0% {
+     background-position: 0 50%;
+   }
+
+   50% {
+     background-position: 100% 50%;
+   }
+
+   100% {
+     background-position: 0 50%;
+   }
+ }
+
+ svg {
+   stroke-dasharray: 950;
+   stroke-dashoffset: 950;
+   animation: dash 2s linear forwards;
+ }
+
+ @keyframes dash {
+   to {
+     stroke-dashoffset: 0;
+   }
+ }
+
+
+
+
+
+/* for square positioning */
+
+ /* home main branch */
+ .home {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 50%;
+   left: 29px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ /*first branch*/
+ .additional {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 15%;
+   left: 340px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .gallery {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 30%;
+   left: 340px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .product {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 45%;
+   left: 340px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .quiz {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 60%;
+   left: 340px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .products {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 75%;
+   left: 340px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .aboutus {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 90%;
+   left: 340px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ /* about us branch */
+ .student1 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 95%;
+   left: 700px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .student2 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 80%;
+   left: 700px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .student3 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 65%;
+   left: 700px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .student4 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 50%;
+   left: 700px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ /* additional page branch */
+ .additional1 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 10%;
+   left: 1050px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .additional2 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 22%;
+   left: 1050px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .additional3 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 34%;
+   left: 1050px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .additional4 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 46%;
+   left: 1050px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .additional5 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 58%;
+   left: 1050px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .additional6 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 70%;
+   left: 1050px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .additional7 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 82%;
+   left: 1050px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .additional8 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 94%;
+   left: 1050px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .additional9 {
+   height: 60px;
+   margin: 0 auto;
+   position: absolute;
+   top: 106%;
+   left: 1050px;
+   transform: translateY(-50%);
+   width: 320px;
+ }
+
+ .site {
+   fill: transparent;
+   stroke-dasharray: 140 540;
+   stroke-dashoffset: -474;
+   stroke-width: 9px;
+   stroke: #2af0ff;
+ }
+
+ .names {
+   color: #000;
+   font-family: "Bahnschrift";
+   font-size: 22px;
+   letter-spacing: 8px;
+   line-height: 32px;
+   position: relative;
+   top: -48px;
+   text-align: center;
+ }
+
+ @font-face {
+   font-family: "Bahnschrift";
+ }
+
+ @keyframes draw {
+   0% {
+     stroke-dasharray: 140 540;
+     stroke-dashoffset: -474;
+     stroke-width: 8px;
+   }
+
+   100% {
+     stroke-dasharray: 760;
+     stroke-dashoffset: 0;
+     stroke-width: 7px;
+   }
+ }
+
+ .home:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .student3:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .gallery:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .student4:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ /*Inside student3*/
+ .student2:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .student1:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ /*Inside About Us*/
+ .product:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .quiz:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .products:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .aboutus:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional1:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional2:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional3:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional4:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional5:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional6:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional7:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional8:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+ .additional9:hover .site {
+   -webkit-animation: 0.5s draw linear forwards;
+   animation: 0.5s draw linear forwards;
+ }
+
+
+
+
+
+
+/* footer class */
+.footerBottom{
+      position: sticky;
+      width: 100%;
+      background: #3586ff;
+      min-height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 0.2vh;
+}

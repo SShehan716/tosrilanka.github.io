@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page editor</title>
+    <link rel="stylesheet" href="css/pageeditor.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+
+<body>
+  <header>
+    <nav>
+
+      <div class="nav">
+        <img  src="images/logo.webp" alt="logo">
+          <ul class="nav-list">
+            <li><a href="home.html" class="nav-link">Home</a></li>
+            <li> <a href="gallery.html" class="nav-link" target="_self">Gallery</a></li>
+            <li><a href="product.html" class="nav-link" target="_self">Products</a></li>
+            <li><a href="quiz.html" class="nav-link" target="_self">Quiz</a></li>
+            <li> <a href="query.html" class="nav-link" target="_self">Query</a></li>
+            <li> <a href="studentsDetails.html" class="active" target="_self">About Us</a></li>
+              </ul>
+
+                <!-- searching icon stuff -->
+            <div class="search">
+                <input name="search" placeholder="search" list="searchList" id="list_of">
+                <datalist id="searchList">
+                  <option value="Home">
+                  <option value="Gallery">
+                  <option value="Products">
+                  <option value="Quiz">
+                  <option value="Query">
+                  <option value="About Us">
+                  <option value="Sigiriya">
+                  <option value="Ella">
+                  <option value="Temple of the tooth">
+                  <option value= "Hikkaduwa Beach">
+                  <option value="Galle Fort">
+                  <option value="Province">
+                  <option value="page Editor">
+                </datalist>
+                  <button type="submit"><ion-icon name="search-sharp" onclick="openpage()"></ion-icon></button>
+
+          </div>
+      </div>
+    </nav>
+    </header>
+
+
+<div class="card">
+  <div>
+    <img src="images/Sachin.jpg" alt="sachin">
+
+    <h1>Sachin<br>
+      <span>Student 4</span>
+    </h1>
+
+   <p>
+       Gallery page <br>
+        Site map
+      </p>
+
+
+
+    <ul>
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a> </li>
+    </ul>
+
+  </div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="javaScripts/navigation.js"></script>
+</body>
+
+</html>
