@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <meta charset="utf-8">
+  <title>Query form</title>
+
+  <!-- query css and java scripts linking -->
+
+  <link rel="stylesheet" type="text/css" href="css/query.css">
+  <script src="javaScripts/query.js"></script>
+
+  <!-- Navigation Bar css and js linking -->
+  <link rel="stylesheet" type="text/css" href="css/navigation.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="javaScripts/navigation.js"></script>
+
+  <!-- Footer css and js linking -->
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="nav">
+      <img class="logo" src="images/logo.webp" alt="logo">
+        <ul class="nav-list">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li> <a href="gallery.html" class="nav-link" target="_self">Gallery</a></li>
+          <li><a href="product.html" class="nav-link" target="_self">Products</a></li>
+          <li><a href="quiz.html" class="nav-link" target="_self">Quiz</a></li>
+          <li> <a href="query.html" class="active" target="_self">Query</a></li>
+          <li> <a href="studentsDetails.html" class="nav-link" target="_self">About Us</a></li>
+            </ul>
+
+              <!-- searching icon stuff -->
+              <div class="search">
+                <input name="search" placeholder="search" list="searchList" id="list_of">
+                <datalist id="searchList">
+                  <option value="Home">
+                  <option value="Gallery">
+                  <option value="Products">
+                  <option value="Quiz">
+                  <option value="Query">
+                  <option value="About Us">
+                  <option value="Sigiriya">
+                  <option value="Ella">
+                  <option value="Temple of the tooth">
+                  <option value= "Hikkaduwa Beach">
+                  <option value="Galle Fort">
+                  <option value="Province">
+                  <option value="page Editor">
+                  <option value="Additional page">
+                </datalist>
+                  <button type="submit"><ion-icon name="search-sharp" onclick="openpage()"></ion-icon></button>
+      
+          </div>
+    </div>
+
+  </nav>
+
+
+<!-- details box -->
+  <form name="myQuery" class="myQuery" >
+
+    <div id="Confirmation" style="display:none">
+      <h1>Submit Details</h1>
+      <div id="details">
+
+
+
+      </div>
+      <!-- two button for edit and send email -->
+      <input type="button" name="editButton" value="Edit" id="btn1" onclick="editButtonclicking()">
+      <input type="submit" name="submitButton" value="Send" id="btn2" onclick="sendMail()" >
+
+</div>
+<!-- query form details -->
+
+    <div id="queryForm">
+      <h1>Query form</h1>
+    <div id="queryForm2">
+      <div class="first_h">
+
+      <h3>Personal Details</h3>
+    </div>
+
+        <div class="labl1">
+          <label for="name">Name :</label>
+          <input type="text" name="name" id="name" class="inputs">
+          <div id="error"></div>
+        </div>
+
+        <div class="labl2">
+
+          <label for="email">Email :</label>
+          <input type="email" name="Email" id="email" class="inputs">
+          <div id="error2"></div>
+        </div>
+
+        <h3>Plaese Enter your query type?</h3>
+        <div class="info">
+          <input type="radio" name="query" value="Accommodation" id="query1">
+          <label for="query1">Accommodation</label>
+          <input type="radio" name="query" value="Travel guide" id="query2">
+          <label for="query2">Travel guide</label>
+          <input type="radio" name="query" value="Travel place" id="query3">
+          <label for="query3">Travel place</label>
+          <input type="radio" name="query" value="Others" id="query4">
+          <label for="query4">Others</label><br><br>
+          <div id="error3"></div>
+        </div>
+        <div class="labl3">
+        <label for ="inputs"> Details:</label><br>
+        <textarea name="Details" rows="2" cols="30" placeholder="Details..." id="inputs"></textarea>
+        <div id="error4"></div>
+       </div>
+        <br>
+        <!-- derict to the next box  -->
+        <input type="button" name="submit" value="SUBMIT" onclick="validateForm(this.form)" class="info2" />
+
+
+        </div>
+      </div>
+  </form>
+<!-- scroll button -->
+  <button onclick="topFunction()" id="scrollbtn" title="Go to top"><ion-icon name="chevron-up-circle" style="font-size: 40px;"></ion-icon></button>
+
+  <!-- wave animation -->
+  <footer>
+      <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+      </div>
+      <div class="footerBottom" style="overflow: hidden;">
+
+      <!-- navigation to site map -->
+      <a href="siteMap.html"><button class="sitemapbtn">Site map</button>
+      </a>
+
+      <!-- showing Group members -->
+      <div class="names">
+        <ul class="name">
+          <li><a href="Sachin.html">Sachin &#9996; </a></li>
+          <li><a href="mindula.html">Mindula&#9996;</a></li>
+          <li><a href="Gayantha.html">Gayantha&#9996;</a></li>
+          <li><a href="Amaya.html">Amaya&#9996;</a></li>
+        </ul>
+      </div>
+          <!-- page creoter name(made By Gayantha)  -->
+              <p>made By Gayantha.&#x2665;</p>
+        </div>
+      </footer>
+</body>
+
+</html>
