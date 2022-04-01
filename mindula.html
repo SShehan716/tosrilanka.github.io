@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page editor</title>
+    <link rel="stylesheet" href="css/pageeditor.css">
+    <link rel="stylesheet" href="css/navigation.css">
+      <!-- Footer css and js linking -->
+  <link rel="stylesheet" href="css/footer.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+
+<body>
+  <header>
+    <nav>
+
+      <div class="nav">
+        <img class="logo" src="images/logo.webp" alt="logo">
+        <ul class="nav-list">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li> <a href="#" class="nav-link" target="_self">Gallery</a></li>
+          <li><a href="product.html" class="nav-link" target="_self">Products</a></li>
+          <li><a href="quiz.html" class="nav-link" target="_self">Quiz</a></li>
+          <li> <a href="query.html" class="nav-link" target="_self">Query</a></li>
+          <li> <a href="studentsDetails.html" class="active" target="_self">About Us</a></li>
+        </ul>
+        <!-- searching icon stuff -->
+        <div class="search">
+                  <input name="search" placeholder="search" list="searchList" id="list_of">
+                  <datalist id="searchList">
+                    <option value="Home">
+                    <option value="Gallery">
+                    <option value="Products">
+                    <option value="Quiz">
+                    <option value="Query">
+                    <option value="About Us">
+                    <option value="Sigiriya">
+                    <option value="Ella">
+                    <option value="Temple of the tooth">
+                    <option value= "Hikkaduwa Beach">
+                    <option value="Galle Fort">
+                    <option value="Province">
+                    <option value="page Editor">
+                    <option value="Additional page">
+                  </datalist>
+                    <button type="submit"><ion-icon name="search-sharp" onclick="openpage()"></ion-icon></button>
+
+            </div>
+      </div>
+
+    </nav>
+  </header>
+  
+
+
+<div class="card">
+  <div>
+    <img src="images/Mindula.jpg" alt="mindula">
+
+    <h1>Mindula<br>
+      <span>Student 1</span>
+    </h1>
+
+    <div class="task">
+      Presentation page <br>
+      product page
+    </div>
+
+
+    <ul>
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="https://www.linkedin.com/in/mindula-perera-727359223"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://www.instagram.com/mindula_/"><ion-icon name="logo-instagram"></ion-icon></a> </li>
+    </ul>
+
+  </div>
+</div>
+
+<footer>
+    <!-- wave animation -->
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <div class="footerBottom" style="overflow: hidden;">
+  
+        <!-- navigation to site map -->
+        <a href="siteMap.html"><button class="sitemapbtn">Site map</button>
+        </a>
+  
+  
+        <!-- showing Group members -->
+        <div class="names">
+          <ul class="name">
+            <li><a href="Sachin.html">Sachin &#9996; </a></li>
+            <li><a href="mindula.html">Mindula&#9996;</a></li>
+            <li><a href="Gayantha.html">Gayantha&#9996;</a></li>
+            <li><a href="Amaya.html">Amaya&#9996;</a></li>
+          </ul>
+        </div>
+        <!-- page creoter name(made By Gayantha)  -->
+        <p>made By US.&#x2665;</p>
+      </div>
+
+  <button onclick="topFunction()" id="scrollbtn" title="Go to top"><ion-icon name="chevron-up-circle" style="font-size: 40px;"></ion-icon></button>
+  
+  
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<script src="javaScripts/navigation.js"></script>
+</body>
+
+</html>

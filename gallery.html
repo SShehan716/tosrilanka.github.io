@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Gallery</title>
+
+  <!-- Gallery css and js linking -->
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
+
+  <!-- Navigation Bar css and js linking -->
+  <link rel="stylesheet" type="text/css" href="css/navigation.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="javaScripts/navigation.js"></script>
+
+  <!-- Footer css and js linking -->
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+
+      <div class="nav">
+        <img class="logo" src="images/logo.webp" alt="logo">
+        <ul class="nav-list">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li> <a href="#" class="active" target="_self">Gallery</a></li>
+          <li><a href="product.html" class="nav-link" target="_self">Products</a></li>
+          <li><a href="quiz.html" class="nav-link" target="_self">Quiz</a></li>
+          <li> <a href="query.html" class="nav-link" target="_self">Query</a></li>
+          <li> <a href="studentsDetails.html" class="nav-link" target="_self">About Us</a></li>
+        </ul>
+
+        <!-- searching icon stuff -->
+        <div class="search">
+          <input name="search" placeholder="search" list="searchList" id="list_of">
+          <datalist id="searchList">
+            <option value="Home">
+            <option value="Gallery">
+            <option value="Products">
+            <option value="Quiz">
+            <option value="Query">
+            <option value="About Us">
+            <option value="Sigiriya">
+            <option value="Ella">
+            <option value="Temple of the tooth">
+            <option value= "Hikkaduwa Beach">
+            <option value="Galle Fort">
+            <option value="Province">
+            <option value="page Editor">
+            <option value="Additional page">
+          </datalist>
+            <button type="submit"><ion-icon name="search-sharp" onclick="openpage()"></ion-icon></button>
+
+    </div>
+      </div>
+
+    </nav>
+
+
+
+    <div class="banner">
+      <video src="videos/background.mp4" autoplay muted loop></video>
+      <div id="overlay"></div>
+
+      <div id="headText">
+        <h2>Unwind on</h2>
+        <h3>an island adventure</h3>
+        <h3>In Sri Lanka</h3>
+        <a href="#placesSL" id="headTextBack">Explore now</a>
+      </div>
+
+
+      <ul class="Themes">
+        <li>
+          <span class="ThemeSelect">Background Theme : </span>
+          <select id="drp1" class="drpDown1" onchange="backgroundDrop()">
+            <option class="opt" value="morning" selected>Morning</option>
+            <option class="opt" value="night">Night</option>
+            <option class="opt" value="evening">Evening</option>
+          </select>
+
+        </li>
+
+        <li>
+          <span class="ThemeSelect">Font Theme : </span>
+          <select id="drp2" class="drpDown1" onchange="backgroundDrop2()">
+            <option class="opt" value="default" selected>Default</option>
+            <option class="opt" value="white">White</option>
+            <option class="opt" value="blue">Blue</option>
+          </select>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </header>
+  <div id="shadow"></div>
+
+  <section id="placesSL">
+    <h1 id="placesSLHead">Places to visit in Sri Lanka</h1>
+
+
+    <div class="OptionSection">
+
+
+
+      <div class="options">
+
+        <div class="option one active">
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon">
+              <img src="images/mountain.png" alt="mountain-icon">
+            </div>
+            <div class="info">
+              <div class="main">Sigiriya</div>
+              <div class="sub">Sigiriya is one of the most visited tourist</div>
+              <a href="#section1">More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="option two">
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon">
+              <img src="images/arch.png" alt="arch-icon">
+            </div>
+            <div class="info">
+              <div class="main">Ella</div>
+              <div class="sub">Ella is a small village in the highlands of Sri Lanka which</div>
+              <a href="#section2">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="option three">
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon icon3">
+              <img src="images/toohoftemple.png" alt="daldamaliga-icon">
+            </div>
+            <div class="info">
+              <div class="main">Temple of the Tooth</div>
+              <div class="sub">The Temple of the Sacred Tooth Relic is a world-renowned</div>
+              <a href="#section3">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="option four">
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon icon4">
+              <img src="images/beach.png" alt="beach-icon">
+            </div>
+            <div class="info">
+              <div class="main">Hikkaduwa Beach</div>
+              <div class="sub">Surfing in the Hikkaduwa area is fairly well known and gets the </div>
+              <a href="#section4">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="option five">
+          <div class="shadow"></div>
+          <div class="label">
+            <div class="icon icon5">
+              <img src="images/gallefort.png" alt="fort-icon">
+            </div>
+            <div class="info">
+              <div class="main">Galle Fort</div>
+              <div class="sub">Galle Fort is a Portuguese fortress that was built in 1588</div>
+              <a href="#section5">More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+  <section class="imageDetails" id="section1">
+    <svg>
+      <text x="0" y="50%" dy=".35em">
+        Sigiriya Lion Rock
+      </text>
+    </svg>
+
+    <div class="imageContent">
+      <figure>
+        <img src="images/Sigiriya-Thumb.jpg" alt="Sigiriya" class="ImgThumbnail">
+        <figcaption class="figCapText">Fig.1 - Sigiriya.</figcaption>
+      </figure>
+      <h2>Sigiriya</h2>
+      <p class="imageDescription">
+        Sigiriya is one of the most visited tourist destinations in Sri Lanka.The ancient palace and fortress complex has significant archaeological importance. It is located on a massive rocky plateau 370 meters above sea level. Sigiriya fortress
+        complex includes remnants of a ruined palace surrounded by an extensive network of fortifications. The palace of Kasyapa was built on top of a huge stone lion, whose feet have survived up to today but the upper parts of the body were
+        destroyed. Western wall of Sigiriya is almost entirely covered by frescoes depicting nude females. The Mirror wall is painted with inscriptions and poems written by the visitors.
+      </p>
+
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal">
+      <span class="close">x</span>
+      <img class="modalImage" src="images/Sigiriya-Thumb.jpg" alt="Sigiriya" />
+    </div>
+
+  </section>
+
+  <section class="imageDetails" id="section2">
+    <svg>
+      <text x="0" y="50%" dy=".35em">
+        ELLA
+      </text>
+    </svg>
+
+    <div class="imageContent">
+      <figure>
+        <img src="images/Ella-Thumb.jpg" alt="Ella" class="ImgThumbnail">
+        <figcaption class="figCapText">Fig.2 - Ella.</figcaption>
+      </figure>
+      <h2>Ella</h2>
+      <p class="imageDescription">
+        Ella is a small village in the highlands of Sri Lanka which is filled
+        with tea estates, mountains, waterfalls, and of course some good air to
+        breathe. It is a dream place for many trekkers with some of the best
+        hikes the Island provides. If you are looking for a place to unwind
+        from your busy lifestyle and spend some peaceful, relaxed time with
+        nature, this is the place.
+      </p>
+
+    </div>
+    <!-- The Modal -->
+    <div class="modal">
+      <span class="close">x</span>
+      <img class="modalImage" src="images/Ella-Thumb.jpg" alt="Ella" />
+    </div>
+
+  </section>
+
+  <section class="imageDetails" id="section3">
+    <svg>
+      <text x="0" y="50%" dy=".35em">
+        Temple of the Tooth </text>
+    </svg>
+
+    <div class="imageContent">
+      <figure>
+        <img src="images/Temple-of-tooth-Thumb.jpg" alt="Temple-of-tooth" class="ImgThumbnail">
+        <figcaption class="figCapText">Fig.3 - Temple of the Tooth.</figcaption>
+      </figure>
+      <h2>Temple of the Tooth</h2>
+      <p class="imageDescription">
+        The Temple of the Sacred Tooth Relic is a world-renowned place of worship,
+        where the left tooth of Gautama Buddha is enshrined. The temple which is
+        venerated by thousands of local & foreign devotees and tourists daily was
+        named a world heritage by UNESCO in 1988. The architecture is of unique
+        Kandyan architectural style with a combination of the unique style used
+        to build "Dalada Mandira".
+      </p>
+
+    </div>
+    <!-- The Modal -->
+    <div class="modal">
+      <span class="close">x</span>
+      <img class="modalImage" src="images/Temple-of-tooth-Thumb.jpg" alt="Temple-of-tooth" />
+    </div>
+
+  </section>
+
+  <section class="imageDetails" id="section4">
+    <svg>
+      <text x="50" y="50%" dy=".35em">
+        Hikkaduwa beach </text>
+    </svg>
+
+    <div class="imageContent">
+      <figure>
+        <img src="images/Hikkaduwa-beach-Thumb.jpg" alt="Hikkaduwa-beach" class="ImgThumbnail">
+        <figcaption class="figCapText">Fig.4 - Hikkaduwa Beach.</figcaption>
+      </figure>
+      <h2>Hikkaduwa Beach</h2>
+      <p class="imageDescription">
+        Surfing in the Hikkaduwa area is fairly well known and gets the best
+        surfing during its dry season, which is from November to March. Scuba
+        diving and diving in clear waters are a major past-time along this
+        stretch. There are more than four different shipwrecks for diving
+        enthusiasts to explore as well as diving shops offering PADI courses
+        and equipment.
+      </p>
+
+    </div>
+    <!-- The Modal -->
+    <div class="modal">
+      <span class="close">x</span>
+      <img class="modalImage" src="images/Hikkaduwa-beach-Thumb.jpg" alt="Hikkaduwa-beach" />
+    </div>
+
+  </section>
+
+  <section class="imageDetails" id="section5">
+    <svg>
+      <text x="0" y="50%" dy=".35em">
+        Galle Fort </text>
+    </svg>
+
+    <div class="imageContent">
+      <figure>
+        <img src="images/Galle-Fort-Thumb.jpg" alt="Galle-Fort" class="ImgThumbnail">
+        <figcaption class="figCapText">Fig.5 - Galle Fort</figcaption>
+      </figure>
+      <h2>Galle Fort</h2>
+      <p class="imageDescription">
+        Galle Fort is a Portuguese fortress that was built in 1588 at the Bay
+        of Galle on the southwestern coast of Sri Lanka. UNESCO declared Galle
+        Dutch Fort as a World Heritage in 1988. The most prominent buildings in
+        the fort complex were the Commandant's residence, the arsenal, and
+        the gun house.
+      </p>
+
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal">
+      <span class="close">x</span>
+      <img class="modalImage" src="images/Galle-Fort-Thumb.jpg" alt="Galle-Fort" />
+    </div>
+
+  </section>
+  <!-- wave animation -->
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <div class="footerBottom" style="overflow: hidden;">
+
+      <!-- navigation to site map -->
+      <a href="siteMap.html"><button class="sitemapbtn">Site map</button>
+      </a>
+
+      <!-- showing Group members -->
+      <div class="names">
+        <ul class="name">
+          <li><a href="Sachin.html">Sachin &#9996; </a></li>
+          <li><a href="mindula.html">Mindula&#9996;</a></li>
+          <li><a href="Gayantha.html">Gayantha&#9996;</a></li>
+          <li><a href="Amaya.html">Amaya&#9996;</a></li>
+        </ul>
+      </div>
+      <!-- page creoter name(made By Gayantha)  -->
+      <p>made By Sachin.&#x2665;</p>
+    </div>
+  </footer>
+
+  <button onclick="topFunction()" id="scrollbtn" title="Go to top"><ion-icon name="chevron-up-circle" style="font-size: 40px;"></ion-icon></button>
+
+
+  <script src="javaScripts/gallery.js"></script>
+
+</body>
+
+</html>

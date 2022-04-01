@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <meta charset="utf-8">
+  <title>Student Details</title>
+  <link rel="stylesheet" href="css/studentsDetails.css">
+
+  <!-- Footer css and js linking -->
+  <link rel="stylesheet" href="css/footer.css">
+
+  <!-- Navigation Bar css and js linking -->
+  <link rel="stylesheet" type="text/css" href="css/navigation.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="javaScripts/navigation.js"></script>
+
+</head>
+
+<body>
+  <div class="smallHeader">
+    <nav>
+
+      <div class="nav">
+        <img class="logo" src="images/logo.webp" alt="logo">
+        <ul class="nav-list">
+          <li><a href="home.html" class="nav-link">Home</a></li>
+          <li> <a href="gallery.html" class="nav-link" target="_self">Gallery</a></li>
+          <li><a href="product.html" class="nav-link" target="_self">Products</a></li>
+          <li><a href="quiz.html" class="nav-link" target="_self">Quiz</a></li>
+          <li> <a href="query.html" class="nav-link" target="_self">Query</a></li>
+          <li> <a href="studentsDetails.html" class="active" target="_self">About Us</a></li>
+        </ul>
+
+        <!-- searching icon stuff -->
+        <div class="search">
+          <input name="search" placeholder="search" list="searchList" id="list_of">
+          <datalist id="searchList">
+            <option value="Home">
+            <option value="Gallery">
+            <option value="Products">
+            <option value="Quiz">
+            <option value="Query">
+            <option value="About Us">
+            <option value="Sigiriya">
+            <option value="Ella">
+            <option value="Temple of the tooth">
+            <option value= "Hikkaduwa Beach">
+            <option value="Galle Fort">
+            <option value="Province">
+            <option value="page Editor">
+          </datalist>
+            <button type="submit"><ion-icon name="search-sharp" onclick="openpage()"></ion-icon></button>
+
+        </div>
+      </div>
+
+    </nav>
+</div>
+
+  <div class="title">
+    <h1>Our team</h1>
+  </div>
+
+  <div class="container">
+    <div class="content">
+      <div class="card">
+
+        <div class="img">
+          <img src="images/Mindula.jpg" alt="Mindula">
+
+          <div class="img_info">
+
+            <span>Student 1</span>
+            <p>Hello I'm Mindula Perera <br>
+                   Student 1 <br>
+                   w1867003 <br>
+                   20210101 <br>
+            </p>
+
+          </div>
+
+        </div>
+
+          <h3>Mindula Nadeeshan</h3>
+
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="card">
+
+        <div class="img">
+          <img src="images/Gayantha.jpg" alt="">
+
+          <div class="img_info">
+
+            <span>Student 2</span>
+            <p>Hello I'm Gayantha Sandeep <br>
+                    Student 2 <br>
+                    w1867028 <br>
+                    20210118 <br>
+            </p>
+
+          </div>
+
+        </div>
+
+        <h3> Gayantha Sandeep</h3>
+
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="card">
+
+        <div class="img">
+        <img src="images/amaya.jpg" alt="Amaya">
+
+          <div class="img_info">
+
+            <span>Student 3</span>
+            <p>Hello I'm Amaya Gamage <br>
+                    Student 3 <br>
+                    w1867025 <br>
+                    20210110 <br>
+            </p>
+
+          </div>
+
+        </div>
+
+        <h3>Amaya Gamage</h3>
+
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="card">
+        <div class="img">
+          <img src="images/Sachin.jpg" alt="">
+          <div class="img_info">
+            <span>Student 4</span>
+            <p>Hello I'm Sachin Shehan <br>
+                   Student 4 <br>
+                   w1867031 <br>
+                   20210131 <br>
+            </p>
+          </div>
+
+        </div>
+        <h3>Sachin<br> Shehan</h3>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- wave animation -->
+  <footer>
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <div class="footerBottom" style="overflow: hidden;">
+
+    <!-- navigation to site map -->
+    <a href="siteMap.html"><button class="sitemapbtn">Site map</button>
+    </a>
+
+    <!-- showing Group members -->
+    <div class="names">
+      <ul class="name">
+        <li><a href="Sachin.html">Sachin &#9996; </a></li>
+        <li><a href="mindula.html">Mindula&#9996;</a></li>
+        <li><a href="Gayantha.html">Gayantha&#9996;</a></li>
+        <li><a href="Amaya.html">Amaya&#9996;</a></li>
+      </ul>
+    </div>
+      <!-- page creoter name(made By Gayantha)  -->
+      <p>made By Amaya.&#x2665;</p>
+    </div>
+  </footer>
+
+   <!-- Scroll up -->
+   <button onclick="topFunction()" id="scrollbtn" title="Go to top">
+    <ion-icon name="chevron-up-circle" style="font-size: 40px;"></ion-icon>
+  </button>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="icon" href="images/logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,  initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Visit Sri Lanka</title>
+    <script>
+      var count = 5; // Timer
+      var redirect = "home.html"; // Target URL
+
+      function countDown() {
+          var timer = document.getElementById("timer");
+          if (count > 0) {
+            count--;
+            timer.innerHTML = "This page will redirect in " + count + " seconds."; // count down Message
+            setTimeout("countDown()", 1000);
+          } else {
+            window.location.href = redirect;
+          }
+       }
+    </script>
+</head>
+<body>
+<div id="container">
+    <div class="content-grid">
+        <div class="lk-logo">
+            <img class="logo" src="images/logo.png" alt="Artwork about Sri Lankan Culture">
+        </div>
+        <div>
+            <h2 style="font-size: 4em" class="text-lightgreen">Travel </h2>
+            <h1 style="font-size: 6em" class="text-lightblue">Sri Lanka</h1>
+            <h5 style="font-size: 1.8em" class="team"><span class="title">Team Members :</span>
+               <br /> Sachin Shehan
+               <br> Amaya Uthsarani
+               <br>Gayantha Sandeep
+               <br>Mindula Nadeeshan </h5>
+        </div>
+    </div>
+    <p id="timer">
+      <script >
+        countDown();
+      </script>
+    </p>
+</div>
+
+</body>
+</html>
