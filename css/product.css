@@ -480,7 +480,9 @@ h1 {
 /*****************/
 input[type=text], input[type=email], input[type=number],select {
     width: 100%;
-    padding: 12px; 
+    padding-top: 12px;
+    padding-bottom: 6px;
+    padding-left: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
