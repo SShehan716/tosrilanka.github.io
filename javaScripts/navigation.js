@@ -25,6 +25,9 @@ function openpage(){                                       //search working
   }else if(getserch=="Additional page"){
     window.open("additionalpage.html","_self")
  
+} else if(getserch=="Home"){
+    window.open("home.html","_self")
+ 
 }else{
   alert("Please try differnt keyword")
 }
