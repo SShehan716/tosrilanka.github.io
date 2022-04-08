@@ -321,7 +321,7 @@
  }
 
  /*Inside About Us*/
- .product:hover .site {
+ .query:hover .site {
    -webkit-animation: 0.5s draw linear forwards;
    animation: 0.5s draw linear forwards;
  }
